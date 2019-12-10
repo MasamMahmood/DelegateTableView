@@ -16,6 +16,11 @@
 		E8F89C64239F90DE00D51735 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8F89C62239F90DE00D51735 /* LaunchScreen.storyboard */; };
 		E8F89C6F239F90DF00D51735 /* DelegateTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F89C6E239F90DF00D51735 /* DelegateTableViewTests.swift */; };
 		E8F89C7A239F90DF00D51735 /* DelegateTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F89C79239F90DF00D51735 /* DelegateTableViewUITests.swift */; };
+		E8F89C89239F911400D51735 /* Unit.json in Resources */ = {isa = PBXBuildFile; fileRef = E8F89C88239F911400D51735 /* Unit.json */; };
+		E8F89C8B239F913900D51735 /* Appointment.json in Resources */ = {isa = PBXBuildFile; fileRef = E8F89C8A239F913900D51735 /* Appointment.json */; };
+		E8F89C8E239F92B400D51735 /* appointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F89C8D239F92B400D51735 /* appointmentViewController.swift */; };
+		E8F89C90239F92DE00D51735 /* UnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F89C8F239F92DE00D51735 /* UnitViewController.swift */; };
+		E8F89C93239F951A00D51735 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F89C92239F951A00D51735 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		E8F89C75239F90DF00D51735 /* DelegateTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DelegateTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F89C79239F90DF00D51735 /* DelegateTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateTableViewUITests.swift; sourceTree = "<group>"; };
 		E8F89C7B239F90DF00D51735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8F89C88239F911400D51735 /* Unit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Unit.json; sourceTree = "<group>"; };
+		E8F89C8A239F913900D51735 /* Appointment.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Appointment.json; sourceTree = "<group>"; };
+		E8F89C8D239F92B400D51735 /* appointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appointmentViewController.swift; sourceTree = "<group>"; };
+		E8F89C8F239F92DE00D51735 /* UnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitViewController.swift; sourceTree = "<group>"; };
+		E8F89C92239F951A00D51735 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +111,9 @@
 		E8F89C53239F90DC00D51735 /* DelegateTableView */ = {
 			isa = PBXGroup;
 			children = (
+				E8F89C91239F950700D51735 /* Model */,
+				E8F89C8C239F929600D51735 /* ViewController */,
+				E8F89C87239F910600D51735 /* Data */,
 				E8F89C54239F90DC00D51735 /* AppDelegate.swift */,
 				E8F89C56239F90DC00D51735 /* SceneDelegate.swift */,
 				E8F89C58239F90DC00D51735 /* ViewController.swift */,
@@ -129,6 +142,32 @@
 				E8F89C7B239F90DF00D51735 /* Info.plist */,
 			);
 			path = DelegateTableViewUITests;
+			sourceTree = "<group>";
+		};
+		E8F89C87239F910600D51735 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E8F89C88239F911400D51735 /* Unit.json */,
+				E8F89C8A239F913900D51735 /* Appointment.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E8F89C8C239F929600D51735 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E8F89C8D239F92B400D51735 /* appointmentViewController.swift */,
+				E8F89C8F239F92DE00D51735 /* UnitViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E8F89C91239F950700D51735 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E8F89C92239F951A00D51735 /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +275,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8F89C64239F90DE00D51735 /* LaunchScreen.storyboard in Resources */,
+				E8F89C89239F911400D51735 /* Unit.json in Resources */,
+				E8F89C8B239F913900D51735 /* Appointment.json in Resources */,
 				E8F89C61239F90DE00D51735 /* Assets.xcassets in Resources */,
 				E8F89C5C239F90DC00D51735 /* Main.storyboard in Resources */,
 			);
@@ -262,9 +303,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8F89C93239F951A00D51735 /* Model.swift in Sources */,
 				E8F89C5F239F90DC00D51735 /* DelegateTableView.xcdatamodeld in Sources */,
+				E8F89C8E239F92B400D51735 /* appointmentViewController.swift in Sources */,
 				E8F89C59239F90DC00D51735 /* ViewController.swift in Sources */,
 				E8F89C55239F90DC00D51735 /* AppDelegate.swift in Sources */,
+				E8F89C90239F92DE00D51735 /* UnitViewController.swift in Sources */,
 				E8F89C57239F90DC00D51735 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
