@@ -152,9 +152,19 @@ class UnitViewController: UIViewController {
             if let actionType = AppData?.sectionList?[indexPath.section].items?[indexPath.row].actionType {
             switch actionType {
                     
-                    case 12:
-                        print(actionType)
-                        
+                    case 4: // phone call
+                    print(actionType)
+                    let phoneNumber = AppData?.sectionList?[indexPath.section].items?[indexPath.row].textValue
+                    //print(phoneNumber ?? 0)
+                    let arr = phoneNumber?.components(separatedBy: .whitespaces)
+                    let final = arr?.joined()
+                    let phone = "tel://"+final!
+                    guard let number = URL(string: phone) else { return }
+                    if #available(iOS 10, *) {
+                        UIApplication.shared.open(number)
+                    } else {
+                        UIApplication.shared.openURL(number)
+                    }
                     
                     case 14:
                         print(actionType)

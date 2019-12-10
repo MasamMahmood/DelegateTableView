@@ -59,3 +59,22 @@ struct Item : Codable {
     let masterId: Int?
     let itemValue: String?
 }
+
+//MARK: - Action Types 
+
+ // Action Types for delegates.
+//0 - > (Unit detail)
+//1 - > (Image)
+//2 - > (Pdf)
+//3 - > (Map)
+//4 - > (Phone call)
+//5 - > (Webview)
+//6 - > (Content)
+//7 - > (Barcode)
+//8 - > (Barcode and manual input)
+//9 - > (Number)
+//10 - >(Number decimal)
+//11 - > (Text)
+//12 - > True/False (Boolean)
+//13 - > (Calendar)
+//14 - > (Pick list)
